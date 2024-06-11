@@ -1,3 +1,4 @@
+// importing chalk //
 import chalk from "chalk";
 class customer {
   constructor(name, cash) {
@@ -64,6 +65,7 @@ class cafeTill {
 }
 
 // example usage //
+// styling with chalk //
 
 const till = new cafeTill();
 const newCustomer = new customer("Charles Leclerc", 10.0);
@@ -72,4 +74,5 @@ console.log(chalk.bold.blue(till.addDrink("Caramel Latte")));
 console.log(chalk.bold.cyan(till.addDrink("Caramel Macchiato")));
 console.log(chalk.bold.red(till.affordOrder(newCustomer)));
 
+// tested to see if chalk works //
 // console.log(chalk.blue("Hello world!"));
