@@ -27,7 +27,7 @@ class cafeTill {
       return `${drinkName} added to the order`;
     } else {
       // if the drink is not in the menu, throw an error //
-      return `${drinkName} is not available in the menu.`;
+      return `${drinkName} is not available in the menu`;
     }
   }
 
@@ -67,10 +67,9 @@ class cafeTill {
 
 const till = new cafeTill();
 const newCustomer = new customer("Charles Leclerc", 10.0);
+console.log(chalk.bold.magenta(till.addDrink("Espresso")));
+console.log(chalk.bold.blue(till.addDrink("Caramel Latte")));
+console.log(chalk.bold.cyan(till.addDrink("Caramel Macchiato")));
+console.log(chalk.bold.red(till.affordOrder(newCustomer)));
 
-console.log(till.addDrink("Espresso"));
-console.log(till.addDrink("Caramel Latte"));
-console.log(till.addDrink("Caramel Macchiato"));
-console.log(till.affordOrder(newCustomer));
-
-console.log(chalk.blue("Hello world!"));
+// console.log(chalk.blue("Hello world!"));
