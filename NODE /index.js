@@ -1,3 +1,4 @@
+import chalk from "chalk";
 class customer {
   constructor(name, cash) {
     this.name = name;
@@ -71,3 +72,5 @@ console.log(till.addDrink("Espresso"));
 console.log(till.addDrink("Caramel Latte"));
 console.log(till.addDrink("Caramel Macchiato"));
 console.log(till.affordOrder(newCustomer));
+
+console.log(chalk.blue("Hello world!"));
